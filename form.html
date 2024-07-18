@@ -13,7 +13,7 @@
         <img src="./images/odin.png" alt="Odin Project Logo">
         <h1>ODIN</h1>
       </div>
-      <h4 class="credit">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></h4>
+      <h4 class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></h4>
     </div>
     <div class="content">
       <div class="text">
@@ -21,16 +21,16 @@
         <p>You <em>know</em> what to do.</p>
       </div>
       <div class="form">
-        <form action="">
+        <form id="register" method="get">
           <p>Let's do this!</p>
           <div class="form-segment">
             <div class="form-field">
               <label for="fname">FIRST NAME</label>
-              <input id="fname" name="fname" type="text">
+              <input id="fname" name="fname" type="text" required>
             </div>
             <div class="form-field">
               <label for="lname">LAST NAME</label>
-              <input id="lname" name="lname" type="text">
+              <input id="lname" name="lname" type="text" required>
             </div>
           </div>
           <div class="form-segment">
@@ -46,19 +46,19 @@
           <div class="form-segment">
             <div class="form-field">
               <label for="user_password">PASSWORD</label>
-              <input id="user_password" name="user_password" type="password">
+              <input id="user_password" name="user_password" type="password" required>
               <span id="wrong_password"></span>
             </div>
             <div class="form-field">
               <label for="user_confirm_password">CONFIRM PASSWORD</label>
-              <input id="user_confirm_password" name="user_confirm_password" type="password" onkeyup="validatePassword()">
+              <input id="user_confirm_password" name="user_confirm_password" type="password" onkeyup="validatePassword()" required>
             </div>
           </div>
           
         </form>
       </div>
       <div class="submit">
-        <button type="submit">Create Account</button>
+        <button type="submit" form="register">Create Account</button>
         <h4>Already have an account? <a href="#">Log in</a></h4>
       </div>
     </div>
