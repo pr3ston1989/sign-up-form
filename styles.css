@@ -1,0 +1,165 @@
+:root {
+    --left-margin: 40px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./fonts/norse-bold-webfont.woff2"),
+         url("./fonts/norse-bold-webfont.woff");
+}
+
+body {
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(44, 44, 44);
+}
+
+h1 {
+    color: white;
+    font-family: "Norse-Bold";
+    font-size: 5em;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: var(--left-margin);
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: var(--left-margin);
+}
+
+a {
+    color: rgb(89,109,72);
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: rgb(89,109,72,0.5);
+}
+
+
+div img {
+    width: 20%;
+    height: auto;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 1.5;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 4px -2px rgb(219,220,221);
+}
+
+button {
+    margin: 30px auto 10px 40px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(249,250,251);
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: rgb(89,109,72);
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    width: 12vw;
+    height: 25px;
+    box-shadow: 3px 3px 5px 0px rgb(219,220,221);
+    margin-bottom: 20px;
+}
+
+span {
+    position: absolute;
+    font-size: 0.7em;
+    bottom: 5px;
+}
+
+.main {
+    width: 75vw;
+    margin: auto;
+    display: flex;
+}
+
+.text {
+    padding: auto;
+    margin-top: 10vh;
+    margin-right: 170px;
+}
+
+.form {
+    background-color: rgb(249,250,251);
+    padding-top: 20px;
+}
+
+.logo {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    height: 17vh;
+    width: 100%;
+}
+
+.content {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249,250,251);
+}
+
+.credit,
+.credit a {
+    color: rgb(249,250,251);
+    margin-top: auto;
+    font-size: 0.8em;
+}
+
+.form-segment {
+    display: flex;
+    gap: 3vw;
+    margin-left: var(--left-margin);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bg {
+    height: 100vh;
+    width: 37%;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
